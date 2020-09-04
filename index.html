@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Weather App By George Marcus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Weather App to determine whether the next event is gonna be held or not" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/safari-pinned-tab.svg"
+      color="#6d2828"
+    />
+    <meta name="msapplication-TileColor" content="#6d2828" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/mstile-144x144.png"
+    />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <section class="top-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto header">
+            <h1 class="text-center">
+              <img src="./assets/favicon-32x32.png" alt="logo">
+              Weather App
+            </h1>
+          </div>
+          <div class="col-md-12 col-lg-12 col-xl-12 mx-auto">
+            <form>
+              <div class="form-row">
+                <div class="col-12 col-md-9 mb-2 mb-md-0">
+                  <input
+                    type="text"
+                    class="form-control form-control-lg city-input"
+                    placeholder="Search for a city"
+                    name="city-input"
+                    autofocus
+                  />
+                </div>
+                <div class="col-12 col-md-3">
+                  <button
+                    type="submit"
+                    class="btn btn-block btn-md btn-primary"
+                  >
+                    Submit
+                  </button>
+
+                </div>
+                 <div class="col-12 col-md-3">
+                    <p class="msg-paragraph"><span class="msg"></span></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </section>
+    <section class="cities-section">
+      <h2 class="text-center searched-cities">Cities You Searched For</h2>
+      <div class="container">
+        <div class="row cities"></div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="container">
+        <small>
+          Designed by
+          <a
+            href="https://www.linkedin.com/in/george-mikhail-developer/"
+            target="_blank"
+            >
+            George Marcus</a
+          >
+        </small>
+
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="./js/weather-helper.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
